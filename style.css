@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    --light:#E4F9F5;
+    --medium1:#30E3CA;
+    --medium2:#11999E;
+    --dark:#40514E;
+    --head:#005792;
+    --orange:#EA5C2B;
+    --purple:#41245C;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(90deg,var(--light), rgb(107, 236, 165));
+}
+
+#div1{
+    width: 30vw;
+}
+
+#div2{
+    width: 40vw;
+}
+
+#div3{
+    width: 30vw;
+}
+
+#img1{
+    position: relative;
+    left: 50px;
+}
+
+#img1{
+    width: 350px;
+    height: 500px;
+}
+
+#img3{
+    width: 450px;
+    height: 450px;
+}
+
+#head{
+    text-align: center;
+    font-size: 3em;
+    color: teal ;
+    font-family: 'Bree Serif', serif;
+
+    
+}
+
+#generator{
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    color: #01796F ;
+    font-size: 1.2em;
+}
+
+
+
+.whole{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.intro{
+    text-align: center ;
+    width: 40vw;
+}
+
+.intro>h2{
+    font-size: 2em;
+    font-family: 'Noto Serif', serif;
+}
+
+.intro>h3{
+    font-family: 'Lora', serif;
+}
+
+.input{
+    line-height: 2;
+    text-align: center  ;
+}
+
+
+form > label {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.4em;
+    padding: 5px;
+}
+
+input{
+    width: 85%;
+    height: 30px;
+    border-radius: 3px;
+    border: gray solid 1px;
+    padding: 20px;
+    margin: 10px;
+}
+
+input::-webkit-input-placeholder{
+    font-size: 1.5em;
+}
+
+#submit{
+    cursor: pointer;
+    font-family: "Libre Baskerville", serif;
+    box-shadow: teal 4px 4px;
+    border-radius: 30px;
+    height: 50px;
+    width: 28%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+    background-color: #3bb5b5;
+    border: none;
+}
+
+#qr{
+    padding: 5%;
+    padding-bottom:0;
+}
+
+#download{
+    cursor: pointer;
+    font-family: "Libre Baskerville", serif;
+    box-shadow: teal 4px 4px;
+    border-radius: 30px;
+    height: 55px;
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1em;  
+    background-color: #3bb5b5;
+    border: none;
+}
+
+@media screen and (max-width:1250px){
+    #img1{
+        width: 300px;
+        height: 400px;
+    }
+    
+    #img3{
+        width: 400px;
+        height: 400px;
+    }
+
+    #qr{
+        height: 300px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:1020px){
+
+    #div1{
+        display: none;
+    }
+
+    #div2{
+        width: 60vw;
+    }
+
+    #div3{
+        width: 40vw;
+    }
+    #qr{
+        height: 275px;
+        width: 325px;
+    }
+
+}
+
+@media screen and (max-width: 850px){
+    #img3{
+        position: relative;
+        top: 60px;
+        right: 60px;
+    }
+    #qr{
+        height: 250px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .whole{
+        flex-direction: column-reverse;
+    }
+    #div2{
+        width: 100vw;
+    }
+    #div3{
+        width: 100vw;
+        overflow: hidden;
+    }
+    #img3{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: -10%;
+    }
+}
+
+@media screen and (max-width: 412px){
+    #div1{
+        display: none;
+    }
+    #img3{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: -10%;
+        left: -2%;
+    }
+    #submit,#download{
+        font-size: .9em;
+    }
+}
